@@ -218,10 +218,10 @@ export const roll = () => [1 + Math.floor(Math.random() * 6), 1 + Math.floor(Mat
 export const diceList = ([a, b]) => (a === b ? [a, a, a, a] : [a, b]);
 
 // ---------- أسماء الزهر كما تُقال في المقهى ----------
-export const DIE_NAMES = { 1: 'يَك', 2: 'دُو', 3: 'سِه', 4: 'جِهَار', 5: 'بَنْج', 6: 'شِيش' };
+export const DIE_NAMES = { 1: 'يَك', 2: 'دُو', 3: 'سِه', 4: 'جِهَار', 5: 'بَنْج', 6: 'شَشْ' };
 export function rollName(a, b) {
   const [hi, lo] = a >= b ? [a, b] : [b, a];
   if (hi === lo) return 'دُو ' + DIE_NAMES[hi];
-  if (hi === 6 && lo === 5) return 'شِيش بِيش';
+  if (hi === 6 && lo === 5) return 'شَشْ بِيش';
   return DIE_NAMES[hi] + ' ' + DIE_NAMES[lo];
 }

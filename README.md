@@ -10,7 +10,7 @@ What's inside:
 - **Four topic pages** (المقهى، الشطرنج، الطاولي، الدومينو) with a short illustrated history, where you can tap the
   underlined words to see their meaning.
 - **Rules with interactive boards**: tap a chess piece to see how it moves, roll dice to learn the Iraqi
-  names of each roll (شيش بيش، دو شيش…), and match domino tiles to the ends of a line.
+  names of each roll (شش بيش، دو شش…), and match domino tiles to the ends of a line.
 - **Vocabulary flashcards** with Iraqi words, their فصحى equivalent and example sentences, plus café dialogues in
   dialect with a فصحى line under each.
 - **Three full games against the computer**: chess (three levels), backgammon (with «مارس», the double win) and
