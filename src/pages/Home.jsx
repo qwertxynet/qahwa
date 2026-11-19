@@ -16,7 +16,7 @@ export default function Home() {
         <div className="hero-text">
           <Star size={48} className="hero-star" />
           <h1 className="ruqaa">{ar('أَلْعَابُ الْمَقْهَى')}</h1>
-          <p className="hero-sub">{ar('الشِّطْرَنْجُ وَالطَّاوْلِي وَالدُّومِينُو فِي الْمَقْهَى الْعِرَاقِيِّ')}</p>
+          <p className="hero-sub">{ar('الشِّطْرَنْجُ وَالطَّاوْلِي وَالدُّومِينُو وَالْمُحَيْبِسُ فِي الْمَقْهَى الْعِرَاقِيِّ')}</p>
           <p className="lead">{ar('تَعَالَ نَجْلِسْ فِي مَقْهًى بَغْدَادِيٍّ: نَشْرَبُ الچَايَ، وَنَتَعَلَّمُ كَلِمَاتِ الْمَقْهَى، وَنَلْعَبُ!')}</p>
           <div className="steps">
             <span><b>١</b>{ar('اقْرَأْ')}</span>

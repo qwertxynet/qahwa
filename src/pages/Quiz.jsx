@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { TOPICS, QUIZZES, byId } from '../data/topics.js';
+import { TOPICS, QUIZZES, BAT_QUESTIONS, byId } from '../data/topics.js';
 import { useAr, href, shuffle, sample, recordScore, num } from '../lib.js';
 import { Die, Tile } from '../components/Bits.jsx';
 import { VocabVisual } from '../components/Flashcards.jsx';
@@ -15,7 +15,7 @@ export default function Quiz({ id }) {
   const q = QUIZZES.find((x) => x.id === id);
   const [round, setRound] = useState(0);
   const again = () => setRound(round + 1);
-  const Q = { match: Match, meaning: Meaning, dice: DiceQuiz, piece: PieceQuiz, pips: PipsQuiz, tea: TeaQuiz }[id];
+  const Q = { match: Match, meaning: Meaning, dice: DiceQuiz, piece: PieceQuiz, pips: PipsQuiz, tea: TeaQuiz, bat: BatQuiz }[id];
   return (
     <div className="game">
       <div className="crumbs">
@@ -215,5 +215,20 @@ function PipsQuiz({ again }) {
 
 function TeaQuiz({ again }) {
   return <OrderSteps steps={byId.cafe.teaSteps} gameId="tea" again={again} />;
+}
+
+/** بات! أسئلة عن قواعد المحيبس وعاداته */
+function BatQuiz({ again }) {
+  const ar = useAr();
+  const questions = useMemo(
+    () =>
+      shuffle(BAT_QUESTIONS).map((x) => ({
+        prompt: <div className="qword small">{ar(x.q)}</div>,
+        options: shuffle(x.a.map((a) => ({ key: a, label: ar(a) }))),
+        answer: x.a[x.c],
+      })),
+    [] // eslint-disable-line react-hooks/exhaustive-deps
+  );
+  return <MultipleChoice questions={questions} gameId="bat" again={again} wide />;
 }
 

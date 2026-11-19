@@ -1,21 +1,25 @@
 # ألعاب المقهى
 
-An Arabic learning site about traditional café games in Iraq: chess (الشطرنج), backgammon (الطاولي) and
-dominoes (الدومينو), plus the café itself (tea, the istikan, café manners and Iraqi café expressions).
+An Arabic learning site about traditional café games in Iraq: chess (الشطرنج), backgammon (الطاولي),
+dominoes (الدومينو) and the Ramadan ring game المحيبس, plus the café itself (tea, the istikan, café manners and Iraqi café expressions).
 It is written for learners of Arabic. The text is standard Arabic with full tashkeel (with an on/off switch), and
 Iraqi dialect words are shown next to their فصحى meaning.
 
 What's inside:
 
-- **Four topic pages** (المقهى، الشطرنج، الطاولي، الدومينو) with a short illustrated history, where you can tap the
+- **Five topic pages** (المقهى، الشطرنج، الطاولي، الدومينو، المحيبس) with a short illustrated history, where you can tap the
   underlined words to see their meaning.
 - **Rules with interactive boards**: tap a chess piece to see how it moves, roll dice to learn the Iraqi
-  names of each roll (شش بيش، دو شش…), and match domino tiles to the ends of a line.
+  names of each roll (شش بيش، دو شش…), and match domino tiles to the ends of a line,
+  and read the players' faces to find the ring in المحيبس.
 - **Vocabulary flashcards** with Iraqi words, their فصحى equivalent and example sentences, plus café dialogues in
   dialect with a فصحى line under each.
-- **Three full games against the computer**: chess (three levels), backgammon (with «مارس», the double win) and
-  dominoes (a match to 51 points).
-- **Six quizzes** and badges. Progress is saved in the browser.
+- **Four full games against the computer**:
+  - chess (three levels)
+  - backgammon (with «مارس», the double win)
+  - dominoes (a match to 51 points)
+  - المحيبس (to 7 points). You take turns as النازل (reading faces for tells) and hiding the ring from the computer.
+- **Seven quizzes** and badges. Progress is saved in the browser.
 
 Built with React + Vite, in the same style as [حكايات الأمثال](https://qwertxynet.github.io/amthal/). It deploys
 to GitHub Pages automatically on every push to `main` (see `.github/workflows/deploy.yml`).
@@ -32,7 +36,7 @@ npm run dev
 All the text is in **`src/data/topics.js`**: stories, glossed words, rules, vocabulary cards, dialogues and the
 tea-making steps. Photo captions are at the top of the same file.
 
-> The Iraqi dialect terms (dice names, café words, dialogues) reflect common Baghdadi usage, but they vary from
+> The Iraqi dialect terms (dice names, café words, dialogues, the words of المحيبس) reflect common Baghdadi usage, but they vary from
 > city to city. A teacher should review them and adjust them to the local usage they want to teach.
 
 ## Media

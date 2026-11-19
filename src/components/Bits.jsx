@@ -47,6 +47,15 @@ export function TopicIcon({ name, size = 28 }) {
         </g>
       </svg>
     );
+  if (name === 'ring')
+    // محبس: خاتم بفصّ
+    return (
+      <svg {...common}>
+        <circle cx="24" cy="29" r="12" fill="none" stroke="currentColor" strokeWidth="5" />
+        <path d="M17 15l7-8 7 8-7 6z" fill="currentColor" />
+        <path d="M20 14.5l4-4.5 4 4.5-4 3.5z" fill="var(--gicon-bg, #22407a)" opacity=".55" />
+      </svg>
+    );
   // knight: حصان الشطرنج (مبسّط)
   return (
     <svg {...common}>

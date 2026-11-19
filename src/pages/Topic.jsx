@@ -10,9 +10,10 @@ import { OrderSteps } from '../components/QuizKit.jsx';
 import { ChessExplorer, ChessGame } from '../play/Chess.jsx';
 import { TawlaExplorer, TawlaGame } from '../play/Tawla.jsx';
 import { DominoExplorer, DominoGame } from '../play/Domino.jsx';
+import { MheibesExplorer, MheibesGame } from '../play/Mheibes.jsx';
 
-const EXPLORER = { chess: ChessExplorer, tawla: TawlaExplorer, domino: DominoExplorer };
-const GAME = { chess: ChessGame, tawla: TawlaGame, domino: DominoGame };
+const EXPLORER = { chess: ChessExplorer, tawla: TawlaExplorer, domino: DominoExplorer, mheibes: MheibesExplorer };
+const GAME = { chess: ChessGame, tawla: TawlaGame, domino: DominoGame, mheibes: MheibesGame };
 
 export default function Topic({ t, tab }) {
   const ar = useAr();
